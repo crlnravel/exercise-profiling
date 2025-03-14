@@ -10,7 +10,7 @@ Kelas: Adpro-B
 
 ### Before
 
-#### /all-student-name
+ #### /all-student-name
 - View Results Tree
 ![img.png](img.png)
 - View Results Table
@@ -39,6 +39,53 @@ Kelas: Adpro-B
 ![img_10.png](img_10.png)
 - Graph Results
 ![img_11.png](img_11.png)
+
+### CLI
+- /all-student-name
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741957785786,102,HTTP Request,200,,highest-gpa 1-1,text,true,,268,127,3,3,http://localhost:8080/highest-gpa,96,0,31
+1741957785786,104,HTTP Request,200,,highest-gpa 1-2,text,true,,268,127,3,3,http://localhost:8080/highest-gpa,103,0,31
+1741957785863,48,HTTP Request,200,,highest-gpa 1-3,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,48,0,1
+1741957785963,38,HTTP Request,200,,highest-gpa 1-4,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,38,0,1
+1741957786063,39,HTTP Request,200,,highest-gpa 1-5,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,39,0,1
+1741957786167,67,HTTP Request,200,,highest-gpa 1-6,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,67,0,4
+1741957786262,42,HTTP Request,200,,highest-gpa 1-7,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,42,0,1
+1741957786362,39,HTTP Request,200,,highest-gpa 1-8,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,39,0,1
+1741957786462,36,HTTP Request,200,,highest-gpa 1-9,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,36,0,0
+1741957786561,37,HTTP Request,200,,highest-gpa 1-10,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,37,0,1
+```
+
+- /highest-gpa
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741957739929,261,HTTP Request,200,,all-student-name 1-2,text,true,,78073,132,5,5,http://localhost:8080/all-student-name,250,0,57
+1741957739978,212,HTTP Request,200,,all-student-name 1-3,text,true,,78073,132,5,5,http://localhost:8080/all-student-name,209,0,8
+1741957739932,258,HTTP Request,200,,all-student-name 1-1,text,true,,78073,132,5,5,http://localhost:8080/all-student-name,247,0,54
+1741957740093,215,HTTP Request,200,,all-student-name 1-4,text,true,,78073,132,3,3,http://localhost:8080/all-student-name,214,0,4
+1741957740180,153,HTTP Request,200,,all-student-name 1-5,text,true,,78073,132,2,2,http://localhost:8080/all-student-name,153,0,9
+1741957740281,155,HTTP Request,200,,all-student-name 1-6,text,true,,78073,132,2,2,http://localhost:8080/all-student-name,154,0,10
+1741957740372,159,HTTP Request,200,,all-student-name 1-7,text,true,,78073,132,2,2,http://localhost:8080/all-student-name,159,0,1
+1741957740472,176,HTTP Request,200,,all-student-name 1-8,text,true,,78073,132,2,2,http://localhost:8080/all-student-name,176,0,1
+1741957740572,92,HTTP Request,200,,all-student-name 1-9,text,true,,78073,132,1,1,http://localhost:8080/all-student-name,92,0,1
+1741957740671,80,HTTP Request,200,,all-student-name 1-10,text,true,,78073,132,1,1,http://localhost:8080/all-student-name,79,0,1
+```
+
+- /all-student
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741957677550,28289,all-student request,200,,Thread Group 1 1-4,text,true,,718455,127,10,10,http://localhost:8080/all-student,28268,0,1
+1741957677413,28470,all-student request,200,,Thread Group 1 1-2,text,true,,718455,127,9,9,http://localhost:8080/all-student,28465,0,28
+1741957677451,28445,all-student request,200,,Thread Group 1 1-3,text,true,,718455,127,8,8,http://localhost:8080/all-student,28440,0,3
+1741957677413,28490,all-student request,200,,Thread Group 1 1-1,text,true,,718455,127,7,7,http://localhost:8080/all-student,28486,0,28
+1741957677649,28424,all-student request,200,,Thread Group 1 1-5,text,true,,718455,127,6,6,http://localhost:8080/all-student,28418,0,2
+1741957677747,28327,all-student request,200,,Thread Group 1 1-6,text,true,,718455,127,6,6,http://localhost:8080/all-student,28322,0,2
+1741957678047,28300,all-student request,200,,Thread Group 1 1-9,text,true,,718455,127,4,4,http://localhost:8080/all-student,28297,0,1
+1741957677848,28530,all-student request,200,,Thread Group 1 1-7,text,true,,718455,127,3,3,http://localhost:8080/all-student,28526,0,2
+1741957678145,28280,all-student request,200,,Thread Group 1 1-10,text,true,,718455,127,2,2,http://localhost:8080/all-student,28277,0,2
+1741957677946,28479,all-student request,200,,Thread Group 1 1-8,text,true,,718455,127,2,2,http://localhost:8080/all-student,28476,0,2
+```
+
 
 ### After
 
@@ -71,6 +118,52 @@ Kelas: Adpro-B
 ![img_14.png](img_14.png)
 - Graph Results
 ![img_15.png](img_15.png)
+
+### CLI
+- /all-student-name
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741961210302,706,HTTP Request,200,,all-student-name 1-2,text,true,,78073,132,9,9,http://localhost:8080/all-student-name,696,0,39
+1741961210619,544,HTTP Request,200,,all-student-name 1-6,text,true,,78073,132,9,9,http://localhost:8080/all-student-name,543,0,1
+1741961210301,875,HTTP Request,200,,all-student-name 1-1,text,true,,78073,132,8,8,http://localhost:8080/all-student-name,874,0,39
+1741961210323,858,HTTP Request,200,,all-student-name 1-3,text,true,,78073,132,7,7,http://localhost:8080/all-student-name,857,0,18
+1741961210421,762,HTTP Request,200,,all-student-name 1-4,text,true,,78073,132,6,6,http://localhost:8080/all-student-name,761,0,1
+1741961210519,701,HTTP Request,200,,all-student-name 1-5,text,true,,78073,132,5,5,http://localhost:8080/all-student-name,700,0,1
+1741961210832,390,HTTP Request,200,,all-student-name 1-8,text,true,,78073,132,4,4,http://localhost:8080/all-student-name,390,0,2
+1741961210722,520,HTTP Request,200,,all-student-name 1-7,text,true,,78073,132,3,3,http://localhost:8080/all-student-name,519,0,2
+1741961210951,345,HTTP Request,200,,all-student-name 1-9,text,true,,78073,132,2,2,http://localhost:8080/all-student-name,344,0,2
+1741961211049,282,HTTP Request,200,,all-student-name 1-10,text,true,,78073,132,1,1,http://localhost:8080/all-student-name,282,0,2
+```
+
+- /highest-gpa
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741961241278,83,HTTP Request,200,,highest-gpa 1-3,text,true,,268,127,3,3,http://localhost:8080/highest-gpa,83,0,4
+1741961241207,150,HTTP Request,200,,highest-gpa 1-2,text,true,,268,127,3,3,http://localhost:8080/highest-gpa,145,0,32
+1741961241207,150,HTTP Request,200,,highest-gpa 1-1,text,true,,268,127,3,3,http://localhost:8080/highest-gpa,145,0,32
+1741961241374,46,HTTP Request,200,,highest-gpa 1-4,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,46,0,1
+1741961241473,64,HTTP Request,200,,highest-gpa 1-5,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,64,0,1
+1741961241572,48,HTTP Request,200,,highest-gpa 1-6,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,48,0,1
+1741961241671,49,HTTP Request,200,,highest-gpa 1-7,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,48,0,1
+1741961241773,74,HTTP Request,200,,highest-gpa 1-8,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,74,0,2
+1741961241871,68,HTTP Request,200,,highest-gpa 1-9,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,68,0,2
+1741961241969,77,HTTP Request,200,,highest-gpa 1-10,text,true,,268,127,1,1,http://localhost:8080/highest-gpa,76,0,1
+```
+
+- /all-student
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741961137326,36980,all-student request,200,,Thread Group 1 1-3,text,true,,718455,127,10,10,http://localhost:8080/all-student,36962,0,1
+1741961137250,37141,all-student request,200,,Thread Group 1 1-1,text,true,,718455,127,9,9,http://localhost:8080/all-student,37136,0,24
+1741961137250,37301,all-student request,200,,Thread Group 1 1-2,text,true,,718455,127,8,8,http://localhost:8080/all-student,37295,0,24
+1741961137424,37351,all-student request,200,,Thread Group 1 1-4,text,true,,718455,127,7,7,http://localhost:8080/all-student,37333,0,2
+1741961137726,37067,all-student request,200,,Thread Group 1 1-7,text,true,,718455,127,6,6,http://localhost:8080/all-student,37061,0,8
+1741961137630,37346,all-student request,200,,Thread Group 1 1-6,text,true,,718455,127,5,5,http://localhost:8080/all-student,37342,0,5
+1741961137524,37535,all-student request,200,,Thread Group 1 1-5,text,true,,718455,127,4,4,http://localhost:8080/all-student,37530,0,3
+1741961137820,37512,all-student request,200,,Thread Group 1 1-8,text,true,,718455,127,3,3,http://localhost:8080/all-student,37507,0,3
+1741961137920,37842,all-student request,200,,Thread Group 1 1-9,text,true,,718455,127,2,2,http://localhost:8080/all-student,37837,0,11
+1741961138019,38017,all-student request,200,,Thread Group 1 1-10,text,true,,718455,127,1,1,http://localhost:8080/all-student,38013,0,5
+```
 
 #### Conclusion 
 After optimization, the profiling elapsed time is noticeably reduced. This enhancement highlights the impact of the applied optimizations, leading to improved performance and greater efficiency of the application.
